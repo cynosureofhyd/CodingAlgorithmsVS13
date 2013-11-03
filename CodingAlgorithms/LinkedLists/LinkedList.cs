@@ -14,14 +14,15 @@ namespace CodingAlgorithms
             public Node Next { get; set; }
         }
 
-        public Node Create(object value)
+        public static Node Create(object value)
         {
             Node newNode = new Node()
             {
                 Value = value,
                 Next = null
             };
-            return newNode;
+            head = newNode;   
+            return head;
         }
 
         private int size;
@@ -33,10 +34,9 @@ namespace CodingAlgorithms
             }
         }
 
-        private Node head;
+        public static Node head;
 
-
-        public Node Add(Node addNode, object data)
+        public static Node Add(Node addNode, object data)
         {
             if(addNode == null)
             {

@@ -60,7 +60,7 @@ namespace CodingAlgorithms
             public int minsofar { get; set; }
         }
 
-
+       
         //public static int Find(List<int> array, int first, int last)
         //{
         //    if (array.Count <= 1)
