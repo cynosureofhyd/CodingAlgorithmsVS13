@@ -14,8 +14,11 @@ namespace CodingAlgorithms
             LinkedList.Node firstList = CreateNode(4);
             LinkedList.Node secondList = CreateNode(5);
             List<int> randomArray = RandomArray.CreateRandomList(10);
-
+            LinkedList.Node firstSortedList = CreateSortedList(5, 1);
+            LinkedList.Node secondSortedList = CreateSortedList(5, 6);
             Int64 result = AddTwoLinkedLists.Add(firstList, secondList);
+
+            LinkedList.Node sortedList = MergeTwoLinkedLists.Merge(firstSortedList, secondSortedList);
             ////int lis = LongestIncreasingSubsequence.lis(randomArray);
             //bool result = BalancingParentheses.IsBalanced("[(){}]");
             //Console.WriteLine();
@@ -38,7 +41,16 @@ namespace CodingAlgorithms
                 newNode = LinkedList.Add(newNode, rand.Next(1, 10));
 
             return newNode;
+        }
 
+        private static LinkedList.Node CreateSortedList(int number, int? optionalstart = null)
+        {
+            LinkedList.Node newNode = null;
+            int start = optionalstart != null ? optionalstart.Value : 0;
+            number = start > 0 ? number + start : number;
+            for (int i = start > 0 ? start : 0; i < number; i++)
+                newNode = LinkedList.Add(newNode, i);
+            return newNode;
         }
     }
 }

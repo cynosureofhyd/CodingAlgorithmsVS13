@@ -13,22 +13,23 @@ namespace CodingAlgorithms.LinkedLists
         {
             LinkedList.Node firstLocalList = firstList;
             LinkedList.Node secondLocalList = secondList;
-            LinkedList.Node result = null;
+            
             if (firstLocalList == null)
                 return secondLocalList;
             else if (secondLocalList == null)
                 return firstLocalList;
-            else
+            LinkedList.Node result = null;
+            
             {
                 if (firstLocalList.Value < secondLocalList.Value)
                 {
-                    LinkedList.Add(result, firstLocalList.Value);
+                    result = LinkedList.Add(result, firstLocalList.Value);
                     result.Next = Merge(firstLocalList.Next, secondLocalList);
                 }
-                if (firstLocalList.Value > secondLocalList.Value)
+                else if (firstLocalList.Value > secondLocalList.Value)
                 {
                     LinkedList.Add(result, secondLocalList.Value);
-                    result.Next = Merge(secondLocalList, firstLocalList.Next);
+                    result.Next = Merge(firstLocalList, secondLocalList.Next);
                 }
                 return result;
             }
