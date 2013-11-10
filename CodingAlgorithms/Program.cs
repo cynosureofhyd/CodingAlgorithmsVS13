@@ -11,13 +11,11 @@ namespace CodingAlgorithms
     {
         static void Main(string[] args)
         {
-
-
             LinkedList.Node firstList = CreateNode(4);
             LinkedList.Node secondList = CreateNode(5);
             List<int> randomArray = RandomArray.CreateRandomList(10);
 
-            AddTwoLinkedLists.Add(firstList, secondList);
+            Int64 result = AddTwoLinkedLists.Add(firstList, secondList);
             ////int lis = LongestIncreasingSubsequence.lis(randomArray);
             //bool result = BalancingParentheses.IsBalanced("[(){}]");
             //Console.WriteLine();

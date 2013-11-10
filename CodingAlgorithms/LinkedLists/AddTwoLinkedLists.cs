@@ -10,25 +10,31 @@ namespace CodingAlgorithms.LinkedLists
     {
         // This class is assuming the linkedlist consists of a number in reverse order
         // For ex. 1234 in linked list form is 4->3->2->1
-        public static int Add(LinkedList.Node FirstList, LinkedList.Node SecondList)
+        public static Int64 Add(LinkedList.Node FirstList, LinkedList.Node SecondList)
         {
-            //if(FirstList == null)
-            int secondNo = LinkedListToNumber(SecondList);
+            Int64 secondNo = 0 , firstNo = 0;
+            if(SecondList != null)
+                secondNo = LinkedListToNumber(SecondList);
             
-            if (SecondList == null)
-                LinkedListToNumber(FirstList);
+            if (FirstList != null)
+                firstNo = LinkedListToNumber(FirstList);
 
-            return 100;
-            
+            Int64 result = firstNo + secondNo;
+            //if(result > Int32.MaxValue)
+
+            return (firstNo + secondNo);            
         }
 
+        // Consider a list for example as 1->2->3->4->5->7. the value returned should be 754321
         public static int LinkedListToNumber(LinkedList.Node list)
         {
-            int result = 1;
-            while(list != null)
+            int result = 0;
+            LinkedList.Node temp = list;
+            while(temp != null)
             {
-                LinkedListToNumber(list.Next);
-
+                if (temp != null)
+                    result = result * 10 + temp.Value;
+                temp = temp.Next;
             }
             return result;
         }
