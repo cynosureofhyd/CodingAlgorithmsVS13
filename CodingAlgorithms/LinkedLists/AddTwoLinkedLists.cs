@@ -12,25 +12,25 @@ namespace CodingAlgorithms.LinkedLists
         // For ex. 1234 in linked list form is 4->3->2->1
         public static int Add(LinkedList.Node FirstList, LinkedList.Node SecondList)
         {
-            if(FirstList == null)
-                PrintListReverseOrder(SecondList);
+            //if(FirstList == null)
+            int secondNo = LinkedListToNumber(SecondList);
             
             if (SecondList == null)
-                PrintListReverseOrder(FirstList);
+                LinkedListToNumber(FirstList);
 
             return 100;
             
         }
 
-        private static int PrintListReverseOrder(LinkedList.Node list)
+        public static int LinkedListToNumber(LinkedList.Node list)
         {
-            StringBuilder result = new StringBuilder();
+            int result = 1;
             while(list != null)
             {
-                result.Append(list.Value.ToString());
-                PrintListReverseOrder(list.Next);
+                LinkedListToNumber(list.Next);
+
             }
-            return Int32.Parse(result.ToString());
+            return result;
         }
     }
 }

@@ -10,11 +10,11 @@ namespace CodingAlgorithms
     {
         public class Node
         {
-            public object Value { get; set; }
+            public int Value { get; set; }
             public Node Next { get; set; }
         }
 
-        public static Node Create(object value)
+        public static Node Create(int value)
         {
             Node newNode = new Node()
             {
@@ -36,7 +36,7 @@ namespace CodingAlgorithms
 
         public static Node head;
 
-        public static Node Add(Node addNode, object data)
+        public static Node Add(Node addNode, int data)
         {
             if(addNode == null)
             {
