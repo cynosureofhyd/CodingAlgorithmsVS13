@@ -14,15 +14,16 @@ namespace CodingAlgorithms
             LinkedList.Node firstList = CreateNode(4);
             LinkedList.Node secondList = CreateNode(5);
             List<int> randomArray = RandomArray.CreateRandomList(10);
-            LinkedList.Node firstSortedList = CreateSortedList(5, 1);
+            LinkedList.Node firstSortedList = CreateSortedList(6, 1);
 
             LinkedList.Node temp = firstSortedList;
             while(temp.Next != null)
             {
                 temp = temp.Next;
             }
-            temp.Next = firstSortedList;
+            temp.Next = firstSortedList.Next.Next;
 
+            LinkedList.Node firstNode = FindFirstInLoop.Find(firstSortedList);
             bool isloop = LoopinLinkedList.IsLoop(temp);
             LinkedList.Node secondSortedList = CreateSortedList(5, 6);
             Int64 result = AddTwoLinkedLists.Add(firstList, secondList);

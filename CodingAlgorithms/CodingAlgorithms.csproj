@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BalancingParentheses.cs" />
     <Compile Include="LinkedLists\AddTwoLinkedLists.cs" />
+    <Compile Include="LinkedLists\FindFirstInLoop.cs" />
     <Compile Include="LinkedLists\LinkedList.cs" />
     <Compile Include="LinkedLists\LoopinLinkedList.cs" />
     <Compile Include="LinkedLists\MergeTwoLinkedLists.cs" />
