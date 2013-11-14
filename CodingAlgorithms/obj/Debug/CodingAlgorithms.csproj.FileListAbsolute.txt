@@ -3,3 +3,11 @@ C:\Users\PrashMaya\Documents\Visual Studio 2013\Projects\CodingAlgorithms\Coding
 C:\Users\PrashMaya\Documents\Visual Studio 2013\Projects\CodingAlgorithms\CodingAlgorithms\bin\Debug\CodingAlgorithms.pdb
 C:\Users\PrashMaya\Documents\Visual Studio 2013\Projects\CodingAlgorithms\CodingAlgorithms\obj\Debug\CodingAlgorithms.exe
 C:\Users\PrashMaya\Documents\Visual Studio 2013\Projects\CodingAlgorithms\CodingAlgorithms\obj\Debug\CodingAlgorithms.pdb
+<<<<<<< HEAD
+=======
+C:\Users\PrashMaya\Documents\Visual Studio 2013\Projects\CodingAlgorithms\CodingAlgorithms\obj\Debug\CodingAlgorithms.csprojResolveAssemblyReference.cache
+C:\Users\Cynosure\Downloads\CodingAlgorithms\CodingAlgorithms\bin\Debug\CodingAlgorithms.exe.config
+C:\Users\Cynosure\Downloads\CodingAlgorithms\CodingAlgorithms\obj\Debug\CodingAlgorithms.exe
+C:\Users\Cynosure\Downloads\CodingAlgorithms\CodingAlgorithms\obj\Debug\CodingAlgorithms.pdb
+C:\Users\Cynosure\Downloads\CodingAlgorithms\CodingAlgorithms\obj\Debug\CodingAlgorithms.csprojResolveAssemblyReference.cache
+>>>>>>> df1759e45d9e53f233d69814819abbbda88a4a2b
