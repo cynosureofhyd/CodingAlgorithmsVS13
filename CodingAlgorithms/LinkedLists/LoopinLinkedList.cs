@@ -14,12 +14,20 @@ namespace CodingAlgorithms.LinkedLists
                 return false;
             else 
             {
-                LinkedList.Node head = list;
-                LinkedList.Node second = list;
-                //if (list.Next != null)
-                //{
-                //    second = list.Next;
-                //}
+                LinkedList.Node head = list.Next;
+                if (head == null)
+                    return false;
+
+                LinkedList.Node second = head.Next;
+
+                while (second != null && head != null)
+                {
+                    if (head == second)
+                        return true;
+                    head = head.Next;
+                    second = head.Next;
+                }
+
                 while (head.Next != null || head != null || second != null)
                 {
                     head = head.Next;
