@@ -16,7 +16,16 @@ namespace CodingAlgorithms.LinkedLists
             else
             {
                 LinkedList.Node meetingNode = FindMeetingNode(list);
-
+                LinkedList.Node first = list;
+                if (meetingNode != null)
+                {
+                    while (first != meetingNode)
+                    {
+                        first = first.Next;
+                        meetingNode = meetingNode.Next;
+                    }
+                }
+                return meetingNode;
             }
         }
 
