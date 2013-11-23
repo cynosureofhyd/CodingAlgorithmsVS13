@@ -27,6 +27,52 @@ namespace CodingAlgorithms.BST
 
         public static void InOrderIterative(BST tree)
         {
+            bool isDone = false;
+            if(tree != null)
+            {
+                BST current = tree;
+                Stack<BST> stack = new Stack<BST>();
+                while (!isDone)
+                {
+                    if (current != null)
+                    {
+                        stack.Push(current);
+                        current = current.left;
+                    }
+                    if(current == null && stack.Count > 0) 
+                    {
+                        BST nodetoprint = stack.Pop();
+                        Console.WriteLine(nodetoprint.data);
+                        current = current.right;
+                    }
+                    if (current == null && stack.Count == 0)
+                    {
+                        isDone = true;
+                        return;
+                    }
+                }
+            }
+        }
+
+        public static void PostOrderIterative(BST tree)
+        {
+
+        }
+
+        public static void PostOrderRecursive(BST tree)
+        {
+            if (tree == null)
+                return;
+            else
+            {
+                PostOrderRecursive(tree.left);
+                PostOrderRecursive(tree.right);
+                Console.WriteLine(tree.data);
+            }
+        }
+
+        public static void PreOrderIterative(BST tree)
+        {
 
         }
 
@@ -41,18 +87,5 @@ namespace CodingAlgorithms.BST
                 PreOrderRecursive(tree.right);
             }
         }
-
-        public static void PostOrderRecursive(BST tree)
-        {
-            if (tree == null)
-                return;
-            else
-            {
-                Console.WriteLine(tree.data);
-                PostOrderRecursive(tree.left);
-                PostOrderRecursive(tree.right);
-            }
-        }
-
     }
 }

@@ -43,9 +43,9 @@
   <ItemGroup>
     <Compile Include="BalancingParentheses.cs" />
     <Compile Include="BST\BST.cs" />
-    <Compile Include="BST\NextNodeInBinaryTree.cs" />
     <Compile Include="LinkedLists\AddTwoLinkedLists.cs" />
     <Compile Include="LinkedLists\FindFirstInLoop.cs" />
+    <Compile Include="LinkedLists\FirstInLoopLinkedList.cs" />
     <Compile Include="LinkedLists\LinkedList.cs" />
     <Compile Include="LinkedLists\LoopinLinkedList.cs" />
     <Compile Include="LinkedLists\MergeTwoLinkedLists.cs" />
