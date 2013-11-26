@@ -42,9 +42,25 @@ namespace CodingAlgorithms.Trees
                 InOrder(tree.left);
                 Console.WriteLine(tree.data);   
                 InOrder(tree.right);
+                
             }
         }
 
+
+        public void PreOrderIterative(BST tree)
+        {
+            if (tree == null)
+                return;
+            else
+            {
+                Stack<BST> stack = new Stack<BST>();
+
+            }
+        }
+
+        // In Order Iterative - First push all the left elements into a stack
+        // Once all the left elements are pushed, then print the current elements data - which would be left first and then
+        // push the right elements into stack
         public void InOrderIterative(BST tree)
         {
             if (tree == null)
