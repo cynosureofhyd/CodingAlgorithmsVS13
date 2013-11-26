@@ -66,6 +66,30 @@ namespace CodingAlgorithms.Trees
             }
         }
 
+        public void PostOrderIterative(BST tree)
+        {
+            if (tree == null)
+                return;
+            Stack<BST> stack1 = new Stack<BST>();
+            Stack<BST> stack2 = new Stack<BST>();
+            stack1.Push(tree);
+
+            while (stack1.Count > 0)
+            {
+                BST node = stack1.Pop();
+                stack2.Push(node);
+
+                if (node.left != null)
+                    stack1.Push(node.left);
+                if (node.right != null)
+                    stack1.Push(node.right);
+            }
+
+            while (stack2.Count > 0)
+            {
+                Console.WriteLine(stack1.Pop().data);
+            }
+        }
         // In Order Iterative - First push all the left elements into a stack
         // Once all the left elements are pushed, then print the current elements data - which would be left first and then
         // push the right elements into stack
