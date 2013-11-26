@@ -46,7 +46,6 @@ namespace CodingAlgorithms.Trees
             }
         }
 
-
         public void PreOrderIterative(BST tree)
         {
             if (tree == null)
@@ -54,7 +53,16 @@ namespace CodingAlgorithms.Trees
             else
             {
                 Stack<BST> stack = new Stack<BST>();
-
+                stack.Push(tree);
+                while(stack.Count > 0)
+                {
+                    BST currentBST = stack.Pop();
+                    Console.WriteLine(currentBST.data);
+                    if (currentBST.left != null)
+                        stack.Push(currentBST.left);
+                    if (currentBST.right != null)
+                        stack.Push(currentBST.right);
+                }
             }
         }
 
