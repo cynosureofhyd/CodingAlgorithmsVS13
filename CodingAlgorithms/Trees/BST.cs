@@ -13,7 +13,7 @@ namespace CodingAlgorithms.Trees
         public BST right { get; set; }
         public BST Parent { get; set; }
 
-        public BST CreateBST(int data)
+        public static BST CreateBST(int data)
         {
             return new BST()
             {
@@ -33,7 +33,7 @@ namespace CodingAlgorithms.Trees
                 return ValueExists(tree.left, data) || ValueExists(tree.right, data);
         }
 
-        public void InOrder(BST tree)
+        public static void InOrder(BST tree)
         {
             if (tree == null)
                 return;
@@ -46,7 +46,7 @@ namespace CodingAlgorithms.Trees
             }
         }
 
-        public void PreOrderIterative(BST tree)
+        public static void PreOrderIterative(BST tree)
         {
             if (tree == null)
                 return;
@@ -66,7 +66,7 @@ namespace CodingAlgorithms.Trees
             }
         }
 
-        public void PostOrderIterative(BST tree)
+        public static void PostOrderIterative(BST tree)
         {
             if (tree == null)
                 return;
@@ -93,15 +93,15 @@ namespace CodingAlgorithms.Trees
         // In Order Iterative - First push all the left elements into a stack
         // Once all the left elements are pushed, then print the current elements data - which would be left first and then
         // push the right elements into stack
-        public void InOrderIterative(BST tree)
+        public static void InOrderIterative(BST tree)
         {
             if (tree == null)
                 return;
             BST current = tree;
-            
+            bool isDone = false;
             Stack<BST> stack = new Stack<BST>();
             stack.Push(current);
-            while(current != null)
+            while(!isDone)
             {
                 if (current != null)
                 {
@@ -110,19 +110,22 @@ namespace CodingAlgorithms.Trees
                 }
                 else
                 {
-                    if (current == null && stack.Count > 0)
+                    if (stack.Count > 0)
                     {
-                        BST nodeToPrint = stack.Pop();
-                        Console.WriteLine(nodeToPrint.data);
-                        current = (current.right);
+                        current = stack.Pop();
+                        Console.WriteLine(current.data);
+                        current = current.right;
                     }
                     if (current == null && stack.Count == 0)
-                        return;
+                    {
+                        isDone = true;
+                        //return;
+                    }
                 }
             }
         }
 
-        public void PreOrder(BST tree)
+        public static void PreOrder(BST tree)
         {
             if (tree == null)
                 return;
@@ -134,7 +137,7 @@ namespace CodingAlgorithms.Trees
             }
         }
 
-        public void PostOrder(BST tree)
+        public static void PostOrder(BST tree)
         {
             if (tree == null)
                 return;
