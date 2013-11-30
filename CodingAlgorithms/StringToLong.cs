@@ -23,18 +23,14 @@ namespace CodingAlgorithms
                 {
                     // To check to see if we are converting only the integer part of the string
                     // And also to check to see if we are having a value lesser than max value of int
-                    if(c != '.' && (result * 10 < Int64.MaxValue))
+                    if(c != '.' && (result * 10 < Int64.MaxValue) && IsNumber(c))
                     {
-                        if (IsNumber(c))
-                        {
-                            result = result * 10 + ConvertChartoInt(c);
-                        }
+                        result = result * 10 + ConvertChartoInt(c);
                     }
                 }
                 return result;
             }
         }
-
 
         private static bool IsNumber(char c)
         {
@@ -46,7 +42,6 @@ namespace CodingAlgorithms
             else
                 return false;
         }
-
 
         private static int ConvertChartoInt(char c)
         {

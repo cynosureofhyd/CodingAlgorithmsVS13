@@ -12,7 +12,7 @@ namespace CodingAlgorithms
     {
         static void Main(string[] args)
         {
-            StringToLong.Convert("922337203685477580");
+            StringToLong.Convert("-92233720368547758");
             CreateBST.PrintInOrder();
             //LinkedList.Node firstList = CreateNode(4);
             //LinkedList.Node secondList = CreateNode(5);
