@@ -13,7 +13,7 @@ namespace CodingAlgorithms
         public static long Convert(string str)
         {
             Int64 result = 0;
-            float decimalhalf = 0.0;
+
             if (String.IsNullOrEmpty(str))
                 return Int64.MinValue;
             else
@@ -21,18 +21,32 @@ namespace CodingAlgorithms
                 int i = 0; 
                 foreach(char c in str)
                 {
-                    if(c != '.')
+                    // To check to see if we are converting only the integer part of the string
+                    // And also to check to see if we are having a value lesser than max value of int
+                    if(c != '.' && (result * 10 < Int64.MaxValue))
                     {
-                        result = result * 10 +  ConvertChartoInt(c);
-                    }
-                    else
-                    {
-
+                        if (IsNumber(c))
+                        {
+                            result = result * 10 + ConvertChartoInt(c);
+                        }
                     }
                 }
                 return result;
             }
         }
+
+
+        private static bool IsNumber(char c)
+        {
+            if (char.IsWhiteSpace(c))
+                return false;
+            int charactertonumber = (int)c - (int)'0';
+            if (charactertonumber >= 0 && charactertonumber <= 9)
+                return true;
+            else
+                return false;
+        }
+
 
         private static int ConvertChartoInt(char c)
         {
