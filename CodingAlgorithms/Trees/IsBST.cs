@@ -30,7 +30,6 @@ namespace CodingAlgorithms.Trees
                 return true;
             if (tree.data < min || tree.data > max)
                 return false;
-
             return Isitinternal(tree.left, min, tree.data) && Isitinternal(tree.right, tree.data, max);
         }
     }
