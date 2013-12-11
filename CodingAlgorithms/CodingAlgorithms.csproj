@@ -53,10 +53,13 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomArray.cs" />
+    <Compile Include="StacksAndQueues\MyStack.cs" />
+    <Compile Include="StacksAndQueues\MyQueue.cs" />
     <Compile Include="StringToLong.cs" />
     <Compile Include="Trees\BST.cs" />
     <Compile Include="Trees\CreateBST.cs" />
     <Compile Include="Trees\IsBST.cs" />
+    <Compile Include="Trees\LargestBSTinTree.cs" />
     <Compile Include="Trees\NextNodeInBST.cs" />
   </ItemGroup>
   <ItemGroup>

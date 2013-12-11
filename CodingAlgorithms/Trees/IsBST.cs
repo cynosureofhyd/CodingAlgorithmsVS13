@@ -8,6 +8,7 @@ namespace CodingAlgorithms.Trees
 {
     public class IsBST
     {
+        // Wrong implementation of IsBST
         public static bool Isit(BST tree)
         {
             if (tree == null)
@@ -24,6 +25,7 @@ namespace CodingAlgorithms.Trees
             }
         }
 
+        // Correct implementation of IsBST
         private static bool Isitinternal(BST tree, int min, int max)
         {
             if (tree == null)

@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using CodingAlgorithms.LinkedLists;
 using CodingAlgorithms.Trees;
+using CodingAlgorithms.Stacks;
+using CodingAlgorithms.StacksAndQueues;
 
 namespace CodingAlgorithms
 {
@@ -12,6 +14,12 @@ namespace CodingAlgorithms
     {
         static void Main(string[] args)
         {
+            MyQueue<int> stack = new MyQueue<int>();
+            stack.Enqueue(20);
+            stack.Enqueue(40);
+            stack.Enqueue(60);
+
+            Console.WriteLine(stack.Dequeue());
             StringToLong.Convert("-92233720368547758");
             CreateBST.PrintInOrder();
             //LinkedList.Node firstList = CreateNode(4);
