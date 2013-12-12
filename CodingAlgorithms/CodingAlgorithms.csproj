@@ -55,6 +55,8 @@
     <Compile Include="RandomArray.cs" />
     <Compile Include="StacksAndQueues\MyStack.cs" />
     <Compile Include="StacksAndQueues\MyQueue.cs" />
+    <Compile Include="StacksAndQueues\QueueFromTwoStacks.cs" />
+    <Compile Include="StacksAndQueues\StackFromTwoQueues.cs" />
     <Compile Include="StringToLong.cs" />
     <Compile Include="Trees\BST.cs" />
     <Compile Include="Trees\CreateBST.cs" />

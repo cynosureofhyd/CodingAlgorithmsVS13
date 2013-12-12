@@ -26,10 +26,17 @@ namespace CodingAlgorithms.StacksAndQueues
             elements[size++] = (T)element;
         }
 
+        public int GetSize()
+        {
+            return size;
+        }
+
         public T Dequeue()
         {
             T e = (T)elements[0];
-            elements[0] = null;
+            elements = elements.Where((val, idx) => idx != 0).ToArray();
+            //elements[0] = null;
+            size--;
             return e;
         }
 

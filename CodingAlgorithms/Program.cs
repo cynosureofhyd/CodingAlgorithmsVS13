@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using CodingAlgorithms.LinkedLists;
 using CodingAlgorithms.Trees;
-using CodingAlgorithms.Stacks;
 using CodingAlgorithms.StacksAndQueues;
 
 namespace CodingAlgorithms
@@ -18,6 +17,15 @@ namespace CodingAlgorithms
             stack.Enqueue(20);
             stack.Enqueue(40);
             stack.Enqueue(60);
+
+
+            StackFromTwoQueues te = new StackFromTwoQueues();
+            te.Push(60);
+            te.Push(70);
+            te.Push(80);
+
+            te.Pop();
+
 
             Console.WriteLine(stack.Dequeue());
             StringToLong.Convert("-92233720368547758");
