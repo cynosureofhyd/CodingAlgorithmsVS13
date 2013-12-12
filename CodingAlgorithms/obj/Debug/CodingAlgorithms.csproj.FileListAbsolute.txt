@@ -1,6 +1,0 @@
-C:\Users\PrashMaya\Documents\Visual Studio 2013\Projects\CodingAlgorithms\CodingAlgorithms\bin\Debug\CodingAlgorithms.exe.config
-C:\Users\PrashMaya\Documents\Visual Studio 2013\Projects\CodingAlgorithms\CodingAlgorithms\bin\Debug\CodingAlgorithms.exe
-C:\Users\PrashMaya\Documents\Visual Studio 2013\Projects\CodingAlgorithms\CodingAlgorithms\bin\Debug\CodingAlgorithms.pdb
-C:\Users\PrashMaya\Documents\Visual Studio 2013\Projects\CodingAlgorithms\CodingAlgorithms\obj\Debug\CodingAlgorithms.exe
-C:\Users\PrashMaya\Documents\Visual Studio 2013\Projects\CodingAlgorithms\CodingAlgorithms\obj\Debug\CodingAlgorithms.pdb
-C:\Users\PrashMaya\Documents\Visual Studio 2013\Projects\CodingAlgorithms\CodingAlgorithms\obj\Debug\CodingAlgorithms.csprojResolveAssemblyReference.cache
