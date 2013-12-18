@@ -24,8 +24,11 @@ namespace CodingAlgorithms
             te.Push(70);
             te.Push(80);
 
-            te.Pop();
-
+            int result = te.Pop(); // 80 first
+            result = te.Pop(); // 70 next
+            te.Push(90);
+            result = te.Pop(); // 90 last
+            result = te.Pop(); // 60 last
 
             Console.WriteLine(stack.Dequeue());
             StringToLong.Convert("-92233720368547758");
