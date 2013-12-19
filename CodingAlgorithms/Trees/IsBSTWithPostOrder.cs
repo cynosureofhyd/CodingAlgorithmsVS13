@@ -18,8 +18,10 @@ namespace CodingAlgorithms.Trees
             {
                 int lastNo = array.Last();
 
+                int i = 0; 
+
                 // Find the left array
-                for(int i = 0; i < array[array.Count() - 1]; i++)
+                for(; i < array.Count() - 1; i++)
                 {
                     if(array[i] < lastNo)
                     {
@@ -30,20 +32,18 @@ namespace CodingAlgorithms.Trees
                 }                
 
                 // Find the right array
-                for (int i = 0; i < array[array.Count() - 1]; i++)
+                for (int j = i; j < array.Count() - 1; j++)
                 {
-                    if (array[i] > lastNo)
+                    if (array[j] > lastNo)
                     {
-                        right.Add(array[i]);
+                        right.Add(array[j]);
                     }
-                    if (array[i] < lastNo)
-                        break;
+                    if (array[j] < lastNo)
+                        return false;
                 }
 
                 return Check(left.ToArray()) && Check(right.ToArray());
-            }
-            else
-                return false;
+            }          
             return true;
         }
     }
