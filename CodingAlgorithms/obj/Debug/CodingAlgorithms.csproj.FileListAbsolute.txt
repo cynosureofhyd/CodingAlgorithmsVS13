@@ -1,0 +1,6 @@
+C:\Users\pyerramilli\Documents\GitHub\CodingAlgorithmsVS13\CodingAlgorithms\bin\Debug\CodingAlgorithms.exe.config
+C:\Users\pyerramilli\Documents\GitHub\CodingAlgorithmsVS13\CodingAlgorithms\bin\Debug\CodingAlgorithms.exe
+C:\Users\pyerramilli\Documents\GitHub\CodingAlgorithmsVS13\CodingAlgorithms\bin\Debug\CodingAlgorithms.pdb
+C:\Users\pyerramilli\Documents\GitHub\CodingAlgorithmsVS13\CodingAlgorithms\obj\Debug\CodingAlgorithms.csprojResolveAssemblyReference.cache
+C:\Users\pyerramilli\Documents\GitHub\CodingAlgorithmsVS13\CodingAlgorithms\obj\Debug\CodingAlgorithms.exe
+C:\Users\pyerramilli\Documents\GitHub\CodingAlgorithmsVS13\CodingAlgorithms\obj\Debug\CodingAlgorithms.pdb
