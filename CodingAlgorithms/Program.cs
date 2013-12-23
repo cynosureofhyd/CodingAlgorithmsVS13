@@ -14,13 +14,13 @@ namespace CodingAlgorithms
         static void Main(string[] args)
         {
             int[] array = {5, 7, 6, 9, 11, 10, 8};
-            
-            Console.WriteLine(IsBSTWithPostOrder.Check(array));
+            int[] falsearray = { 7, 4, 6, 5 };
+            Console.WriteLine(IsBSTWithPostOrder.Check(falsearray));
+
             //MyQueue<int> stack = new MyQueue<int>();
             //stack.Enqueue(20);
             //stack.Enqueue(40);
             //stack.Enqueue(60);
-
 
             //StackFromTwoQueues te = new StackFromTwoQueues();
             //te.Push(60);

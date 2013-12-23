@@ -60,6 +60,7 @@
     <Compile Include="StringToLong.cs" />
     <Compile Include="Trees\BST.cs" />
     <Compile Include="Trees\CreateBST.cs" />
+    <Compile Include="Trees\InorderIterative.cs" />
     <Compile Include="Trees\IsBST.cs" />
     <Compile Include="Trees\IsBSTWithPostOrder.cs" />
     <Compile Include="Trees\LargestBSTinTree.cs" />

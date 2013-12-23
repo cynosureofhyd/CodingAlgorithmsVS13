@@ -8,6 +8,9 @@ namespace CodingAlgorithms.Trees
 {
     // Given an array with certain values and assuming no duplicates. 
     // For example  {5, 7, 6, 9, 11, 10, 8} forms a BST and the given array is a BST
+
+    // Algorithm is simple, the last number in the array is the root. And so we start from the beginning and find the left sub array and right sub array. 
+    // If any of the values in the left sub array are greater than the root then this is not a BST and if any of the values in the right sub array are lesser than the root then its not a BST
     public class IsBSTWithPostOrder
     {
         public static bool Check(int[] array)
