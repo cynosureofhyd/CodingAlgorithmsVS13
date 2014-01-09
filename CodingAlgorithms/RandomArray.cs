@@ -18,5 +18,17 @@ namespace CodingAlgorithms
             }
             return randomArray;
         }
+
+        public static List<int> CreateRandomListOfSpecificMax(int size, int max)
+        {
+            List<int> randomArray = new List<int>();
+            Random rand = new Random();
+            for (int i = 0; i < size; i++)
+            {
+                randomArray.Add(rand.Next(max));
+            }
+            return randomArray;
+        }
+
     }
 }

@@ -53,6 +53,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomArray.cs" />
+    <Compile Include="Sorting\Quicksort.cs" />
     <Compile Include="StacksAndQueues\MyStack.cs" />
     <Compile Include="StacksAndQueues\MyQueue.cs" />
     <Compile Include="StacksAndQueues\QueueFromTwoStacks.cs" />

@@ -21,6 +21,8 @@ namespace CodingAlgorithms.Trees
             if (tree == null)
                 return 0;
             return sizebst(tree.left) + sizebst(tree.right) + 1;
+
+
         }
 
         private static bool IsBst(BST tree)

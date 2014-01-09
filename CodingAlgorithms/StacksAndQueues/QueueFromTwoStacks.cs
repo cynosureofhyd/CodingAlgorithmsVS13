@@ -19,12 +19,26 @@ namespace CodingAlgorithms.StacksAndQueues
 
         public void Enqueue(int data)
         {
-
+            //if(st2.GetSize() == 0)
+            //{
+                st1.Push(data);
+            //}
         }
 
         public int Dequeue()
         {
-            return 0;
+            if (st2.GetSize() == 0)
+            {
+                while (st1.GetSize() > 1)
+                {
+                    st2.Push(st1.Pop());
+                }
+                return st1.Pop();
+            }
+            if(st2.GetSize() == 0)
+                throw new InvalidOperationException("Queue is empty");
+            return st2.Pop();
+            //return 0;
         }
     }
 }

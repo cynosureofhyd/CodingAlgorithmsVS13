@@ -16,6 +16,11 @@ namespace CodingAlgorithms.StacksAndQueues
             elements = new Object[DEFAULT_CAPACITY];
           }
 
+          public int GetSize()
+          {
+              return size;
+          }
+
           public void Push(T e) {
             if (size == elements.Length) {
               ensureCapacity();

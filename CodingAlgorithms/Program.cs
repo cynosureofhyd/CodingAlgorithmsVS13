@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CodingAlgorithms.LinkedLists;
 using CodingAlgorithms.Trees;
 using CodingAlgorithms.StacksAndQueues;
+using CodingAlgorithms.Sorting;
 
 namespace CodingAlgorithms
 {
@@ -13,23 +14,25 @@ namespace CodingAlgorithms
     {
         static void Main(string[] args)
         {
-            MyQueue<int> stack = new MyQueue<int>();
-            stack.Enqueue(20);
-            stack.Enqueue(40);
-            stack.Enqueue(60);
+            Quicksort.partition(RandomArray.CreateRandomListOfSpecificMax(10, 10).ToArray(), 0, 10);
+
+            //MyQueue<int> stack = new MyQueue<int>();
+            //stack.Enqueue(20);
+            //stack.Enqueue(40);
+            //stack.Enqueue(60);
 
 
-            StackFromTwoQueues te = new StackFromTwoQueues();
-            te.Push(60);
-            te.Push(70);
-            te.Push(80);
+            //StackFromTwoQueues te = new StackFromTwoQueues();
+            //te.Push(60);
+            //te.Push(70);
+            //te.Push(80);
 
-            te.Pop();
+            //te.Pop();
 
 
-            Console.WriteLine(stack.Dequeue());
-            StringToLong.Convert("-92233720368547758");
-            CreateBST.PrintInOrder();
+            //Console.WriteLine(stack.Dequeue());
+            //StringToLong.Convert("-92233720368547758");
+            //CreateBST.PrintInOrder();
             //LinkedList.Node firstList = CreateNode(4);
             //LinkedList.Node secondList = CreateNode(5);
             //List<int> randomArray = RandomArray.CreateRandomList(10);
