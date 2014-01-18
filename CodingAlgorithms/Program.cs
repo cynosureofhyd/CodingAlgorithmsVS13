@@ -23,12 +23,20 @@ namespace CodingAlgorithms
             //stack.Enqueue(60);
 
 
+<<<<<<< HEAD
             //StackFromTwoQueues te = new StackFromTwoQueues();
             //te.Push(60);
             //te.Push(70);
             //te.Push(80);
 
             //te.Pop();
+=======
+            int result = te.Pop(); // 80 first
+            result = te.Pop(); // 70 next
+            te.Push(90);
+            result = te.Pop(); // 90 last
+            result = te.Pop(); // 60 last
+>>>>>>> d5dae11e767a52e18098a38f8c2895e5f09591b2
 
 
             //Console.WriteLine(stack.Dequeue());
