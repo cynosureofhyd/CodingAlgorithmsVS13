@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BalancingParentheses.cs" />
     <Compile Include="BST\BST.cs" />
+    <Compile Include="CaesarCipher.cs" />
     <Compile Include="LinkedLists\AddTwoLinkedLists.cs" />
     <Compile Include="LinkedLists\FindFirstInLoop.cs" />
     <Compile Include="LinkedLists\FirstInLoopLinkedList.cs" />

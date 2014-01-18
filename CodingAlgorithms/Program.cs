@@ -14,7 +14,8 @@ namespace CodingAlgorithms
     {
         static void Main(string[] args)
         {
-            Quicksort.partition(RandomArray.CreateRandomListOfSpecificMax(10, 10).ToArray(), 0, 10);
+            string output = CaesarCipher.Calculate("abyz", -28);
+            //Quicksort.partition(RandomArray.CreateRandomListOfSpecificMax(10, 10).ToArray(), 0, 10);
 
             //MyQueue<int> stack = new MyQueue<int>();
             //stack.Enqueue(20);
