@@ -11,7 +11,6 @@ namespace CodingAlgorithms
         public static int Nth(int number)
         {
             return AdditiveSequence(number, 0, 1);
-            //return 0;
         }
 
         private static int AdditiveSequence(int n, int t0, int t1)
