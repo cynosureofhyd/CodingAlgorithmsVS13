@@ -14,31 +14,28 @@ namespace CodingAlgorithms
     {
         static void Main(string[] args)
         {
-            string output = CaesarCipher.Calculate("abyz", -28);
-            //Quicksort.partition(RandomArray.CreateRandomListOfSpecificMax(10, 10).ToArray(), 0, 10);
+            int fibonacci = NthFibonacciNumber.Nth(5);
+            int result = LeastCommonMultiple.Calculate(1080, 148);
+            Console.WriteLine(result);
+            //NumberOfParentheses.Calculate(3);
 
+            //FindMajorityInArray.Find(RandomArray.CreateRandomListOfSpecificMax(100, 100).ToArray());
+            //string output = CaesarCipher.Calculate("abyz", -28);
+            //Quicksort.partition(RandomArray.CreateRandomListOfSpecificMax(10, 10).ToArray(), 0, 10);
             //MyQueue<int> stack = new MyQueue<int>();
             //stack.Enqueue(20);
             //stack.Enqueue(40);
             //stack.Enqueue(60);
-
-
-<<<<<<< HEAD
             //StackFromTwoQueues te = new StackFromTwoQueues();
             //te.Push(60);
             //te.Push(70);
             //te.Push(80);
-
             //te.Pop();
-=======
-            int result = te.Pop(); // 80 first
-            result = te.Pop(); // 70 next
-            te.Push(90);
-            result = te.Pop(); // 90 last
-            result = te.Pop(); // 60 last
->>>>>>> d5dae11e767a52e18098a38f8c2895e5f09591b2
-
-
+            //int result = te.Pop(); // 80 first
+            //result = te.Pop(); // 70 next
+            //te.Push(90);
+            //result = te.Pop(); // 90 last
+            //result = te.Pop(); // 60 last
             //Console.WriteLine(stack.Dequeue());
             //StringToLong.Convert("-92233720368547758");
             //CreateBST.PrintInOrder();
